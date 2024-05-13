@@ -1,0 +1,28 @@
+#all{
+    margin:0 11.5%;
+}
+#sez1{
+    padding-top: 70px;
+    margin-bottom: 80%;
+    float:right;
+    width: 80%;
+}
+#foto{
+    float:left;
+    margin-right: 3%;
+    padding-top: 70px;
+    width: 15%;
+}
+#foto img{
+    width: 100%;
+    border: 0.3vh solid;
+    border-image: linear-gradient(to top right, #990000da, #ff4545) 1;
+}
+#sez1 :first-child{
+    font-size: xx-large;
+    color: #ff4545;
+}
+#sez1 :last-child{
+    font-size: x-large;
+    color:#FFFFFF;
+}

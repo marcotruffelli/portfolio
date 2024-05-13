@@ -1,0 +1,10 @@
+#sez1{
+    text-align: center;
+    padding-bottom: 55%;
+}
+#sez1 img{
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10%;
+}

@@ -1,0 +1,41 @@
+#left-column {
+    width: 30%;
+    color: #FFFFFF;
+    margin-left: 11.5%;
+    margin-right: 4%;
+    float: left;
+    font-size: x-large;
+    padding-top: 70px;
+    position: fixed;
+    max-height: calc(70vh - 0px); /* Altezza massima per il contenuto scrollabile */
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: thin; /* Larghezza sottile della barra di scorrimento */
+    scrollbar-color: #ffffff23 transparent; /* Colore della barra di scorrimento */
+    direction: rtl;
+    text-align: left;
+}
+#left-column img {
+    width: 99%;
+    border: 0.3vh solid;
+    border-image: linear-gradient(to top right, #990000da, #ff4545) 1;
+}
+#left-column :nth-child(3){
+    font-size: xx-large;
+    color:#FF4545;
+}
+#right-column {
+    margin-left: 45%; /* Imposta uno spazio a sinistra della colonna destra */
+    margin-right: 11%;
+    color: #FFFFFF;
+    font-size: x-large;
+    overflow-y: hidden; /* Nascondi lo scorrimento verticale nella colonna destra */
+    padding-top: 110px; /* Spazio vuoto sopra la colonna destra */
+}
+#right-column p:first-child, p:nth-child(3), p:nth-child(6){
+    font-size: xx-large;
+    color:#FF4545;
+}
+#right-column li{
+    margin-bottom:1.5%;
+}
