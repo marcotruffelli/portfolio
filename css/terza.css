@@ -1,0 +1,50 @@
+section{
+    padding:3vw 0;
+}
+.img-fluid {
+    border-width: 0.3vh;
+    border-image: linear-gradient(to top right, #990000da, #ff4545) 1;
+}
+
+.img-fluid:hover {
+    border-color: white;
+}
+
+#sez1 {
+    padding: 2rem 0;
+}
+
+p.h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.img-fluid:hover{
+    border: 0.3vh solid #FFFFFF !important;
+}
+
+.button {
+    font-size: 0.8rem;
+    padding: 1.1%;
+    border: 2px solid #C91A27;
+    border-radius: 25px;
+    background: linear-gradient(to top right, #C91A27, #BF1B28);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+button:hover {
+    background: transparent;
+    border-color: #C91A27;
+    color: white;
+    a{
+        text-decoration: none;
+    }
+}
