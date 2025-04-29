@@ -1,0 +1,64 @@
+main{
+    font-size: 13pt;
+    padding-top: 4rem;
+}
+#left-column {
+    max-height: calc(100vh - 150px);
+    padding: 1.5rem;
+    overflow-y: auto;
+    background-color: transparent !important;
+}
+.h4{
+    font-size: 20pt;
+}
+#right-column {
+    padding: 1.5rem;
+    background-color: transparent !important;
+    color: #FFFFFF !important;
+}
+.scrollable-text {
+    max-height: calc(100vh - 150px);
+    overflow-y: auto;
+}
+#left-column::-webkit-scrollbar{
+    width: 2px !important;
+}
+::-webkit-scrollbar{
+    width: 2px !important;
+}
+body::-webkit-scrollbar{
+    width: 8px !important;
+}
+p a:hover {
+    color: #FF4545 !important;
+}
+
+/* Comportamento per schermi più larghi */
+#left-column, #right-column {
+    overflow-y: auto; /* La scrollbar è visibile su schermi grandi */
+}
+
+/* Media query per schermi piccoli (come su telefoni) */
+@media (max-width: 768px) {
+    /* Nascondi la scrollbar in modo che il contenuto scorra come un blocco unico */
+    #left-column, #right-column {
+        overflow: hidden !important; /* Nascondi le scrollbar */
+    }
+
+    /* Rimuovi le divisioni laterali e imposta le colonne in un layout verticale */
+    main {
+        display: block; /* Mostra tutto come un blocco unico */
+    }
+
+    #left-column, #right-column {
+        width: 100%; /* Fai in modo che le colonne occupino l'intera larghezza */
+        margin: 0; /* Rimuovi margini laterali */
+        padding: 1rem; /* Imposta un po' di spazio interno */
+    }
+
+    /* Rendi il contenuto della pagina scrollabile come un unico blocco */
+    .scrollable-text {
+        max-height: none; /* Rimuovi i limiti di altezza */
+        overflow-y: auto; /* Abilita lo scroll su tutto il contenuto */
+    }
+}
