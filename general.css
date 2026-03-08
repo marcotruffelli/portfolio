@@ -1,0 +1,113 @@
+html,body {
+    height: auto;
+    scroll-behavior: smooth;
+    margin: 0;
+    background: radial-gradient(80% 40% at top right, #202020, #111111);
+    font-family: sans-serif;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FF4545;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #333333;
+    border-radius: 100px;
+}
+
+header {
+    background-color: #111111ec;
+    position: fixed;
+    z-index: 1;
+}
+.custom-header{
+    padding: 0% 15% !important;
+}
+header img {
+    max-height: 50px;
+}
+header ul {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+}
+header ul li {
+    font-size: 15pt;
+    margin-left: 20px;
+    color: #FFFFFF;
+}
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#first::after {
+    width: 100%;
+}
+.nav-item a {
+    position: relative;
+    text-decoration: none;
+    padding: 5px 0;
+    display: inline-block;
+}
+.nav-item a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #FF4545;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+.nav-item a:hover::after {
+    width: 100%;
+}
+a:hover {
+    color: #FFFFFF; /* Colore quando si passa sopra il link */
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    clear: both;
+    padding: 3% 5%;
+}
+footer img {
+    max-height: 50px;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+footer ul li {
+    margin-bottom: 10px;
+    font-size: 15pt;
+    color: #FFFFFF;
+}
+footer ul li{
+    display: inline-flex;
+    margin-right: 20px;
+}
+
+/*Per immagini responsive in mezzo al testo*/
+@media screen and (max-width: 1000px) {
+    .img-responsive{
+        width: 50% !important;
+        margin:0 !important;
+        margin-bottom: 3% !important;
+    }
+}
+@media screen and (max-width: 768px) {
+    .img-responsive{
+        width: 100% !important;
+        margin:0 !important;
+        margin-bottom: 3% !important;
+    }
+}
