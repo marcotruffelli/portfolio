@@ -1,19 +1,18 @@
-# 🎨 Portfolio Personale - Marco Truffelli
+# 🎨 Personal Portfolio - Marco Truffelli
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue?logo=github&logoColor=white)](https://marcotruffelli.github.io/portfolio/)
 
-Benvenuti nel mio portfolio personale! Questo repository contiene il codice completo del mio sito, per mostrare i miei progetti scolastici, le competenze acquisite e alcune informazioni su di me.
+Welcome to my personal portfolio! This repository contains the complete code for my website, showcasing my **school projects**, the **skills I have developed**, and some information about me.
 
-
-Puoi visitare il sito direttamente qui:  
+You can visit the live site here:  
 👉 [marcotruffelli.github.io/portfolio](https://marcotruffelli.github.io/portfolio/)
 
 ---
 
-## 📝 Descrizione
+## 📝 Description
 
-Il sito è stato svilupapto per:
+The website was developed to:
 
-- Presentare i miei progetti scuola/lavoro
-- Mostrare le competenze acquisite durante il percorso scolastico  
-- Fornire informazioni personali e contatti   
+- Present my school and work projects  
+- Showcase the skills I have acquired during my studies  
+- Provide personal information and contact details
