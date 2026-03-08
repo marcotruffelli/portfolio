@@ -13,6 +13,6 @@ You can visit the live site here:
 
 The website was developed to:
 
-- Present my school and work projects  
-- Showcase the skills I have acquired during my studies  
+- Present my school/work projects
+- Showcase the skills I have acquired during my these projects
 - Provide personal information and contact details
