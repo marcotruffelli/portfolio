@@ -12,8 +12,8 @@ Puoi visitare il sito direttamente qui:
 
 ## 📝 Descrizione
 
-Il sito è stato progettato per:
+Il sito è stato svilupapto per:
 
-- Presentare i miei progetti principali  
+- Presentare i miei progetti scuola/lavoro
 - Mostrare le competenze acquisite durante il percorso scolastico  
 - Fornire informazioni personali e contatti   
