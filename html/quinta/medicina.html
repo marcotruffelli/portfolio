@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Marco Truffelli</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="../../general.css">
+        <link rel="stylesheet" href="../terza/css/anpal.css">
+        <style>
+            /*#img1{
+                width: 30%;
+                float: left;
+                margin-right: 3%;
+                margin-bottom: 3%;
+            }*/
+            .text-wrap {
+    width: 100%;
+    line-height: 1.6;
+}
+
+.img-float-right {
+    float: right;
+    width: 280px;
+    max-width: 40%;
+    margin: 0 0 15px 20px;
+    border-radius: 10px;
+}
+
+/* IMPORTANTISSIMO: evita il bug della "prima riga sola" */
+.text-wrap p {
+    margin: 0;
+}
+
+/* Clear automatico */
+.text-wrap::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .img-float-right {
+        float: none;
+        display: block;
+        max-width: 100%;
+        margin: 15px auto;
+    }
+}
+        </style>
+    </head>
+    <body>
+        <header class="custom-header d-flex justify-content-between align-items-center p-3 container-fluid">
+            <a href="https://www.pascal.edu.it" target="_blank">
+                <img src="../../Images/logoBus.png" alt="logo Bus" class="img-fluid" style="max-width: 150px;">
+            </a>
+            <nav>
+                <div class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav">
+                            <li class="nav-item"><a href="../../index.html">Home</a></li>
+                            <li class="nav-item"><a href="../terza.html">Terza</a></li>
+                            <li class="nav-item"><a id="first" href="../quarta.html">Quarta</a></li>
+                            <li class="nav-item"><a href="../quinta.html">Quinta</a></li>
+                            <li class="nav-item"><a href="../chiSono.html">Chi sono</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+        </header>
+
+        <main class="container">
+            <div class="row flex-lg-nowrap">
+                <!-- Colonna Sinistra -->
+                <section id="left-column" class="col-lg-4 col-md-5 col-12 mb-3 bg-dark text-white overflow-auto">
+                    <p><a href="../quarta.html" class="custom-button">⬅ Torna indietro</a></p>
+                    <img src="../../Images/ospedale.jpg" alt="Image" class="img-fluid">
+                    <p class="h4 text-danger mt-3">L'azienda</p>
+                    <p>
+                        L’<b>Azienda Unità Sanitaria Locale (AUSL) di Reggio Emilia</b> è l’ente pubblico responsabile della gestione e dell'erogazione dei servizi sanitari sull'intero territorio provinciale. Fondata per garantire il diritto alla salute dei cittadini, l’azienda si occupa della pianificazione e dell’organizzazione delle cure primarie, specialistiche e ospedaliere.
+                        <br><br>
+                        Le principali attività dell'ente includono:
+                    </p>
+                    <ul>
+                        <li>Gestione Ospedaliera</li>
+                        <li>Assistenza Territoriale</li>
+                        <li>Prevenzione e Sanità Pubblica</li>
+                        <li>Servizi di Digitalizzazione</li>
+                    </ul>
+                </section>
+    
+                <!-- Colonna Destra -->
+                <section id="right-column" class="col-lg-8 col-md-7 col-12 bg-light text-dark">
+                    <div class="scrollable-text">
+                        <p class="h4 text-danger">Introduzione</p>
+                        <p>
+                            La giornata è iniziata con un incontro con il Responsabile dei Sistemi Informativi dell'AUSL, che ci ha illustrato la complessità della gestione IT in ambito sanitario e il suo percorso di carriera. Successivamente, abbiamo seguito un'introduzione teorica tenuta da personale medico su temi come la <b>radioattività</b> e l'interazione dei fasci radioattivi con il corpo umano, prima di accedere ai reparti specialistici dell'Arcispedale Santa Maria Nuova.
+                        </p>
+
+                        <p class="h4 text-danger">Reparto medicina nucleare</p>
+                        <div class="text-wrap">
+                            <img src="../../Images/macchina2.jpg" alt="" class="img-fluid">
+                            <p>    
+                                Nel reparto di Medicina Nucleare, ho visitato il laboratorio dove vengono preparati i <b>radiofarmaci</b>. Qui ho visto le attrezzature piombate per il trasporto sicuro degli isotopi e il <b>Ciclotrone</b>, un acceleratore di particelle fondamentale per produrre emettitori di positroni a vita breve. Ci hanno spiegato come questi traccianti vengano iniettati nel paziente per eseguire esami di <b>diagnostica PET-CT</b>, permettendo di individuare patologie neoplastiche grazie a meccanismi funzionali, diversamente da una normale ecografia. Ho potuto osservare le stanze di somministrazione e quelle dedicate alla degenza dei pazienti radioattivi, visualizzando infine alcune scansioni per capire come il farmaco "illumini" le zone da analizzare.
+                            </p>
+                        </div>
+
+                        <p class="h4 text-danger">Reparto radioterapia</p>
+                        <div class="text-wrap">
+                            <img src="../../Images/macchina1.jpg" alt="" class="img-fluid">
+                            <p>
+                                Nel reparto di Radioterapia, la visita si è spostata sui macchinari per la cura dei tumori. Ho visto da vicino l’<b>Acceleratore Lineare</b> per la radioterapia a fasci esterni e altri sistemi avanzati come la <b>Tomoterapia</b>. Mi è stato spiegato il complesso processo di pianificazione: prima un fisico medico e poi un medico oncologo programmano il macchinario per concentrare le radiazioni sul bersaglio (tumorale) risparmiando i tessuti sani. Ho visto strumenti particolari come i sistemi di immobilizzazione per i pazienti e i sensori per il gating respiratorio (che sincronizza il raggio con il respiro). Infine, abbiamo visionato macchinari specifici per la <b>Brachiterapia</b> (usata per il tumore all'utero) e per il trattamento di patologie della pelle.
+                            </p>
+                        </div>    
+                        <p style="clear:left;" class="h4 text-danger">Commento</p>
+                        <p>
+                            Ho trovato questa attività estremamente interessante, anche se mi ha confermato che non vorrei intraprendere una carriera nel settore medico o fisico. È stato però affascinante scoprire una branca della medicina così tecnologica, che solitamente resta nascosta agli occhi dei non addetti ai lavori.
+                            <br><br>
+                            A livello emotivo, la visita mi ha toccato profondamente. Entrare in reparti dove si trattano malattie spesso gravi crea un'atmosfera particolare; immedesimarsi nel paziente fa impressione, specialmente quando capisci quanta scienza, quanti macchinari e quante persone lavorano dietro a quello che, agli occhi di chi soffre, sembra solo un semplice farmaco o una seduta su un lettino. Avendo avuto dei cari che hanno affrontato percorsi simili in passato, vedere l'organizzazione e la tecnologia che sta dietro alle loro cure è stato emozionante e mi ha aiutato a dare un volto concreto a processi scientifici che prima conoscevo solo per nome.
+                        </p>
+                        <p style="clear:left;" class="h4 text-danger">Competenze attivate</p>
+                        <p>
+                            Trasversali
+                            <ul>
+                                
+                            </ul>
+                            Specifiche
+                            <ul>
+                                
+                            </ul>
+                        </p>
+                        </div>
+                </section>
+            </div>
+        </main>
+    </body>
+    <footer class="bg-dark text-white text-center py-3">
+        <a href="https://www.pascal.edu.it" target="_blank"><img src="../../Images/logoBus.png" alt="logo Bus" class="img-fluid mb-2" style="max-width: 150px;"></a>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a href="../../index.html">Home</a></li>
+                <li class="nav-item"><a href="../terza.html">Terza</a></li>
+                <li class="nav-item"><a id="first" href="../quarta.html">Quarta</a></li>
+                <li class="nav-item"><a href="../quinta.html">Quinta</a></li>
+                <li class="nav-item"><a href="../chiSono.html">Chi sono</a></li>
+            </ul>
+        </nav>
+    </footer>
+</html>
