@@ -619,7 +619,7 @@ nav {
   margin-bottom: 1rem;
 }
 .comp-card li {
-  font-size: .85rem;
+  font-size: 0.95rem;
   color: rgba(244,241,236,.6);
   margin-bottom: .4rem;
   line-height: 1.6;
@@ -773,4 +773,25 @@ footer {
   .detail-two-col { grid-template-columns: 1fr; }
   .detail-sidebar { position: static; }
   .act-grid { padding: 2rem 1.25rem 4rem; }
+}
+
+.img-text-wrap {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+.detail-img-float {
+  width: 40%;
+  flex-shrink: 0;
+  margin: 0;
+  border-radius: var(--r);
+  border: 1px solid var(--border);
+}
+@media (max-width: 640px) {
+  .img-text-wrap {
+    flex-direction: column;
+  }
+  .detail-img-float {
+    width: 100%;
+  }
 }
