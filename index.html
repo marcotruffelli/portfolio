@@ -1,209 +1,153 @@
 <!DOCTYPE html>
 <html lang="it">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio Marco Truffelli</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-        <link rel="stylesheet" href="css/home.css">
-        <link rel="stylesheet" href="general.css">
-    </head>
-    <body>
-        <header class="custom-header d-flex justify-content-between align-items-center p-3 container-fluid">
-            <a href="https://www.pascal.edu.it" target="_blank">
-                <img src="Images/logoBus.png" alt="logo Bus" class="img-fluid" style="max-width: 150px;">
-            </a>
-            <nav>
-                <div class="navbar navbar-expand-lg navbar-light">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="nav">
-                            <li class="nav-item"><a id="first" href="">Home</a></li>
-                            <li class="nav-item"><a href="html/terza.html">Terza</a></li>
-                            <li class="nav-item"><a href="html/quarta.html">Quarta</a></li>
-                            <li class="nav-item"><a href="html/quinta.html">Quinta</a></li>
-                            <li class="nav-item"><a href="html/chiSono.html">Chi sono</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        
-        <section id="nome" class="text-center py-5">
-            <div class="container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-12 col-md-auto d-flex flex-column flex-md-row justify-content-center align-items-center">
-                        <div class="mb-3 mb-md-0">
-                            <img src="Images/io.jpg" alt="Marco Truffelli" class="img-fluid rounded-circle border border-danger">
-                        </div>
-                        <div class="ms-md-4"> <!-- Aggiungi margine a sinistra solo su schermi medi e grandi -->
-                            <p class="display-4 fw-bold">
-                                Marco <span>Truffelli</span>
-                                <br><button><a href="mailto:marco.truffelli@studenti.iispascal.it">CONTATTAMI</a></button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        
-        <main class="container">
-            <section id="sez1" class="my-5 text-center container-fluid"> <!--Colonne pcto-->
-                <div class="row">
-                    <img src="Images/red.png" alt="FLS" class="img-fluid mb-4">
-                    <div class="row justify-content-center g-4">
-                        <article class="col-12 col-md-4 mb-4 text-center">
-                            <img src="Images/faq.png" alt="" class="img-fluid mb-3" style="max-width: 50px;">
-                            <h3>Cos'è</h3>
-                            <p>
-                                La Formazione Scuola-Lavoro (FSL) rappresenta l’evoluzione dei precedenti percorsi di alternanza scuola-lavoro ed è un insieme di esperienze formative destinate agli studenti del triennio delle scuole secondarie di secondo grado. La FSL mira a integrare in modo strutturato il percorso scolastico con il contesto lavorativo e produttivo, favorendo lo sviluppo di competenze trasversali, professionali e orientative. Attraverso queste attività, gli studenti possono avvicinarsi concretamente al mondo del lavoro e acquisire maggiore consapevolezza rispetto alle proprie attitudini e scelte future.
-                            </p>
-                        </article>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marco Truffelli — Portfolio FSL</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-                        <article class="col-12 col-md-4 mb-4 text-center">
-                            <img src="Images/scopo.png" alt="" class="img-fluid mb-3" style="max-width: 50px;">
-                            <h3>Scopo</h3>
-                            <p>
-                                La Formazione Scuola-Lavoro nasce con l’obiettivo di rafforzare il collegamento tra il sistema di istruzione e il mondo professionale, rendendo il percorso scolastico più aderente alle competenze richieste dal mercato del lavoro. La FSL consente agli studenti di sperimentare contesti lavorativi reali, sviluppare capacità organizzative, relazionali e di problem solving, e maturare una visione più concreta delle opportunità formative e occupazionali disponibili dopo il diploma.
-                            </p>
-                        </article>
+<nav>
+  <a class="nav-logo" href="index.html">TRUFFELLI</a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="html/terza.html">Terza</a></li>
+    <li><a href="html/quarta.html">Quarta</a></li>
+    <li><a href="html/quinta.html">Quinta</a></li>
+    <li><a href="html/chiSono.html">Chi sono</a></li>
+  </ul>
+</nav>
 
-                        <article class="col-12 col-md-4 mb-4 text-center">
-                            <img src="Images/clock.png" alt="" class="img-fluid mb-3" style="max-width: 50px;">
-                            <h3>Durata</h3>
-                            <p>
-                                La normativa vigente prevede un monte ore minimo obbligatorio per la Formazione Scuola-Lavoro, differenziato in base all’indirizzo di studio: almeno 210 ore per gli istituti professionali, 150 ore per gli istituti tecnici e 90 ore per i licei. La FSL costituisce un requisito fondamentale per l’ammissione all’Esame di Stato e rappresenta un’esperienza formativa qualificante, non valutabile solo in termini quantitativi, ma soprattutto per il contributo che offre alla crescita personale e professionale dello studente.
-                            </p>
-                        </article>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Portfolio FSL — IIS Blaise Pascal</p>
+    <h1 class="hero-name">MARCO<br><span class="accent">TRUFFELLI</span></h1>
+    <p class="hero-sub">Tre anni di Formazione Scuola‑Lavoro raccolti in questo portfolio: incontri, laboratori, tirocinio.</p>
+    <a href="html/chiSono.html" class="hero-btn">
+      Chi sono
+      <svg width="16" height="10" fill="none" viewBox="0 0 16 10"><path d="M10.5 1L15 5.5M15 5.5L10.5 10M15 5.5H1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+    </a>
+  </div>
+  <div class="hero-right">
+    <img class="hero-img" src="Images/io.jpg" alt="Marco Truffelli" />
+    <div class="hero-right-overlay"></div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="num">3</span><span class="lbl">Anni</span></div>
+      <div class="hero-stat"><span class="num">12</span><span class="lbl">Attività</span></div>
+      <div class="hero-stat"><span class="num">260</span><span class="lbl">Ore totali</span></div>
+    </div>
+  </div>
+</section>
 
-                    </div>
-                </div>
-            </section>
+<!-- COS'È FSL -->
+<section class="section">
+  <h2 class="section-title">Cos'è la <span class="accent">FSL</span></h2>
+  <div class="info-grid">
+    <div class="info-card reveal">
+      <div class="info-card-icon">❓</div>
+      <h3>Cos'è</h3>
+      <p>La Formazione Scuola-Lavoro (FSL) rappresenta l'evoluzione dei precedenti percorsi di PCTO ed è un insieme di esperienze formative destinate agli studenti del triennio delle scuole secondarie di secondo grado. La FSL mira a integrare in modo strutturato il percorso scolastico con il contesto lavorativo e produttivo, favorendo lo sviluppo di competenze trasversali, professionali e orientative.</p>
+    </div>
+    <div class="info-card reveal">
+      <div class="info-card-icon">🎯</div>
+      <h3>Scopo</h3>
+      <p>La Formazione Scuola-Lavoro nasce con l'obiettivo di rafforzare il collegamento tra il sistema di istruzione e il mondo professionale, rendendo il percorso scolastico più aderente alle competenze richieste dal mercato del lavoro. La FSL consente agli studenti di sperimentare contesti lavorativi reali, sviluppare capacità organizzative, relazionali e di problem solving.</p>
+    </div>
+    <div class="info-card reveal">
+      <div class="info-card-icon">🕒</div>
+      <h3>Durata</h3>
+      <p>La normativa vigente prevede un monte ore minimo obbligatorio differenziato in base all'indirizzo di studio: almeno 210 ore per gli istituti professionali, 150 ore per gli istituti tecnici e 90 ore per i licei. La FSL costituisce un requisito fondamentale per l'ammissione all'Esame di Stato e rappresenta un'esperienza formativa qualificante anche per la crescita personale.</p>
+    </div>
+  </div>
+</section>
 
-            <section id="sez2" class="py-5"> <!--Tabella pcto-->
-                <h2 class="text-white">Le mie attività FSL</h2>
-                <div class="container">
-                <div class="mb-5">
-                    <a href="html/terza.html"><h3 class="text-danger">Terza</h3></a>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th style="width: 50%;">Attività</th>
-                                <th style="width: 25%;">Durata</th>
-                                <th style="width: 25%;">Organizzatore</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr onclick="window.location.href='html/terza/sicurezza.html'">
-                                <td>Corso di sicurezza</td>
-                                <td>2 ore</td>
-                                <td>Scuola</td>
-                            </tr>
-                            <tr onclick="window.location.href='html/terza/anpal.html'">
-                                <td>Videoconferenza ANPAL</td>
-                                <td>2 ore</td>
-                                <td>ANPAL</td>
-                            </tr>
-                            <tr onclick="window.location.href='html/terza/monta.html'">
-                                <td>Progetto Monta e smonta</td>
-                                <td>3 ore</td>
-                                <td>Scuola</td>
-                            </tr>
-                            <tr onclick="window.location.href='html/terza/linux.html'">
-                                <td>Corso Linux</td>
-                                <td>9 ore</td>
-                                <td>Scuola</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="mb-5">
-                    <a href="html/quarta.html"><h3 class="text-danger">Quarta</h3></a>
-                    <table class="table table-fixed">
-                        <thead>
-                            <tr>
-                                <th style="width: 50%;">Attività</th>
-                                <th style="width: 25%;">Durata</th>
-                                <th style="width: 25%;">Organizzatore</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr onclick="window.location.href='html/quarta/polarity.html'">
-                                <td>Progetto Polarity</td>
-                                <td>10 ore</td>
-                                <td>Polarity</td>
-                            </tr>
-                            <tr onclick="window.location.href='html/quarta/mead.html'">
-                                <td>Progetto Mead</td>
-                                <td>5 ore</td>
-                                <td>Mead informatica</td>
-                            </tr>
-                            <tr onclick="window.location.href='html/quarta/cna.html'">
-                                <td>Incontro CNA</td>
-                                <td>4 ore</td>
-                                <td>CNA</td>
-                            </tr>
-                            <tr onclick="window.location.href='html/quarta/unindustria.html'">
-                                <td>Progetto MI PRESENTO</td>
-                                <td>2 ore</td>
-                                <td>Unindustria</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="mb-5">
-                    <a href="html/quinta.html"><h3 class="text-danger">Quinta</h3></a>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th style="width: 50%;">Attività</th>
-                                <th style="width: 25%;">Durata</th>
-                                <th style="width: 25%;">Organizzatore</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr onclick="window.location.href='html/quinta/mercurio.html'">
-                                <td>Stage estivo Mercurio Sistemi</td>
-                                <td>200 ore</td>
-                                <td>Mercurio Sistemi</td>
-                            </tr>
-                            <tr onclick="window.location.href='html/quinta/polarity.html'">
-                                <td>Polarity parte 2</td>
-                                <td>14 ore</td>
-                                <td>Polarity</td>
-                            </tr>
-                            <tr onclick="window.location.href='html/quinta/medicina.html'">
-                                <td>Visita reparti medicina nucleare e radioterapia</td>
-                                <td>5 ore</td>
-                                <td>AUSL Reggio Emilia</td>
-                            </tr>
-                            <tr onclick="window.location.href='html/quinta/mead.html'">
-                                <td>Progetto Mead parte 2</td>
-                                <td>4 ore</td>
-                                <td>Mead informatica</td>
-                            </tr>    
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            </section>
-        </main>
-    </body>
-    
-    <footer class="bg-dark text-white text-center py-3">
-        <a href="https://www.pascal.edu.it" target="_blank"><img src="Images/logoBus.png" alt="logo Bus" class="img-fluid mb-2" style="max-width: 150px;"></a>
-        <nav>
-            <ul class="nav justify-content-center">
-                <li class="nav-item"><a id="first" href="">Home</a></li>
-                <li class="nav-item"><a href="html/terza.html">Terza</a></li>
-                <li class="nav-item"><a href="html/quarta.html">Quarta</a></li>
-                <li class="nav-item"><a href="html/quinta.html">Quinta</a></li>
-                <li class="nav-item"><a href="html/chiSono.html">Chi sono</a></li>
-            </ul>
-        </nav>
-    </footer>
+<!-- TABELLE ATTIVITÀ -->
+<section class="tables-section">
+
+  <div class="year-block reveal">
+    <a class="year-block-header" href="html/terza.html">
+      <span class="year-tag">3°</span>
+      <h3>Anno Terzo</h3>
+      <div class="year-line"></div>
+      <span class="year-arrow">Vai alla pagina →</span>
+    </a>
+    <table class="activity-table">
+      <colgroup>
+        <col class="col-name"/>
+        <col class="col-org"/>
+        <col class="col-hours"/>
+      </colgroup>
+      <thead><tr><th>Attività</th><th>Organizzatore</th><th>Ore</th></tr></thead>
+      <tbody>
+        <tr onclick="location.href='html/terza/sicurezza.html'"><td>Corso di sicurezza</td><td>Scuola</td><td>2</td></tr>
+        <tr onclick="location.href='html/terza/anpal.html'"><td>Videoconferenza ANPAL</td><td>ANPAL</td><td>2</td></tr>
+        <tr onclick="location.href='html/terza/monta.html'"><td>Progetto Monta e smonta</td><td>Scuola</td><td>3</td></tr>
+        <tr onclick="location.href='html/terza/linux.html'"><td>Corso Linux</td><td>Scuola</td><td>9</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="year-block reveal">
+    <a class="year-block-header" href="html/quarta.html">
+      <span class="year-tag">4°</span>
+      <h3>Anno Quarto</h3>
+      <div class="year-line"></div>
+      <span class="year-arrow">Vai alla pagina →</span>
+    </a>
+    <table class="activity-table">
+      <colgroup>
+        <col class="col-name"/>
+        <col class="col-org"/>
+        <col class="col-hours"/>
+      </colgroup>
+      <thead><tr><th>Attività</th><th>Organizzatore</th><th>Ore</th></tr></thead>
+      <tbody>
+        <tr onclick="location.href='html/quarta/polarity.html'"><td>Progetto Polarity</td><td>Polarity</td><td>10</td></tr>
+        <tr onclick="location.href='html/quarta/mead.html'"><td>Progetto Mead</td><td>Mead informatica</td><td>5</td></tr>
+        <tr onclick="location.href='html/quarta/cna.html'"><td>Incontro CNA</td><td>CNA</td><td>4</td></tr>
+        <tr onclick="location.href='html/quarta/unindustria.html'"><td>Progetto MI PRESENTO</td><td>Unindustria</td><td>2</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="year-block reveal">
+    <a class="year-block-header" href="html/quinta.html">
+      <span class="year-tag">5°</span>
+      <h3>Anno Quinto</h3>
+      <div class="year-line"></div>
+      <span class="year-arrow">Vai alla pagina →</span>
+    </a>
+    <table class="activity-table">
+      <colgroup>
+        <col class="col-name"/>
+        <col class="col-org"/>
+        <col class="col-hours"/>
+      </colgroup>
+      <thead><tr><th>Attività</th><th>Organizzatore</th><th>Ore</th></tr></thead>
+      <tbody>
+        <tr onclick="location.href='html/quinta/mercurio.html'"><td>Stage estivo Mercurio Sistemi</td><td>Mercurio Sistemi</td><td>200</td></tr>
+        <tr onclick="location.href='html/quinta/polarity.html'"><td>Progetto Polarity 2</td><td>Polarity</td><td>14</td></tr>
+        <tr onclick="location.href='html/quinta/medicina.html'"><td>Visita medicina nucleare e radioterapia</td><td>AUSL Reggio Emilia</td><td>5</td></tr>
+        <tr onclick="location.href='html/quinta/mead.html'"><td>Progetto Mead 2</td><td>Mead informatica</td><td>4</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</section>
+
+<footer>
+  <a class="footer-brand" href="https://www.pascal.edu.it" target="_blank" rel="noopener">IIS Blaise Pascal — Reggio Emilia</a>
+  <ul class="footer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="html/terza.html">Terza</a></li>
+    <li><a href="html/quarta.html">Quarta</a></li>
+    <li><a href="html/quinta.html">Quinta</a></li>
+    <li><a href="html/chiSono.html">Chi sono</a></li>
+  </ul>
+</footer>
+
+<script src="common.js"></script>
+</body>
 </html>
