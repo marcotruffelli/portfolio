@@ -15,7 +15,7 @@
 <a class="back-link" href="../quinta.html"><svg width="14" height="9" fill="none" viewBox="0 0 14 9"><path d="M5 1L.5 5M.5 5L5 9M.5 5H13.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>Torna alla quinta</a>
 <div class="detail-outer"><div class="detail-two-col">
   <aside class="detail-sidebar">
-    <div class="detail-cover-wrap"><img class="detail-cover" src="../../Images/mead2.jpg" alt="Mead 2"/></div>
+    <div class="detail-cover-wrap"><img class="detail-cover" src="../../Images/mead.jpg" alt="Mead 2"/></div>
     <div class="detail-meta-card">
       <div class="detail-meta-row"><span class="detail-meta-label">Anno</span><span class="detail-meta-value">Quinto</span></div>
       <div class="detail-meta-row"><span class="detail-meta-label">Durata</span><span class="detail-meta-value red">4 ore</span></div>
@@ -25,27 +25,74 @@
   </aside>
   <main class="detail-main">
     <div class="detail-section reveal"><h2>Cos'è</h2>
-      <p>Mead Informatica è un System Integrator nel settore ICT con sede principale a Reggio Emilia e filiali in tutta Italia. Con oltre 150 dipendenti offre soluzioni di Cybersecurity, Networking, Data Center, Unified Communication e sviluppo software per aziende pubbliche e private.</p>
+      <p>
+        ​Mead Informatica è un'azienda italiana fondata nel 1994 con sede principale a Reggio Emilia e filiali a Casier (TV), Agrate Brianza (MB) e Roma. Con oltre 150 dipendenti, di cui il 70% con profilo tecnico, Mead si propone come un System Integrator nel settore ICT, offrendo soluzioni integrate e servizi tecnologici per aziende pubbliche e private.​
+        <br>Mead si distingue per una vasta gamma di servizi, tra cui:
+      </p>
+      <ul>
+          <li>Cybersecurity</li>
+          <li>Networking</li>
+          <li>Data Center</li>
+          <li>Unified Communication</li>
+          <li>Sviluppo software</li>
+          <li>Governance, Risk & Compliance</li>
+          <li>Supporto tecnico</li>
+      </ul>
     </div>
-    <div class="detail-section reveal"><h2>L'incontro</h2>
-      
+    <div class="detail-section reveal"><h2>Introduzione</h2>
+      <p>Nella prima parte dell'incontro ho ricevuto un'introduzione generale alla <strong>cybersecurity</strong>: cos'è, in cosa consiste e quali figure professionali operano in questo settore. Mi è stato poi spiegato come si struttura un attacco informatico nelle sue fasi principali:</p>
+        <ul>
+          <li>Reconnaissance: raccolta di informazioni sul bersaglio</li>
+          <li>Weaponization: creazione dello strumento di attacco (es. malware)</li>
+          <li>Delivery: invio dell’attacco (email, link, ecc.)</li>
+          <li>Exploitation: sfruttamento di una vulnerabilità</li>
+          <li>Installation: installazione del malware nel sistema</li>
+          <li>Command and Control: comunicazione con il sistema compromesso</li>
+          <li>Actions on Objectives: esecuzione degli obiettivi (es. furto dati)</li>
+        </ul>
+        <p>Successivamente mi è stata fornita una panoramica sulle diverse categorie di hacker:</p>
+        <ul>
+          <li>White hat: hacker etici che lavorano legalmente per migliorare la sicurezza: effettuano test di penetrazione (penetration testing), trovano vulnerabilità e le segnalano alle aziende per correggerle</li>
+          <li>accedere a sistemi senza autorizzazione per individuare falle, ma senza l’intento di causare danni. Tuttavia, il loro comportamento resta illegale o eticamente discutibile, anche se a volte segnalano i problemi scoperti</li>
+          <li>Black hat: hacker malintenzionati e illegali: sfruttano vulnerabilità per guadagno personale o per danneggiare sistemi e organizzazioni</li>
+        </ul>
+    </div>
+    <div class="detail-section reveal"><h2>Laboratorio</h2>
+      <p>Nella seconda parte ci siamo divisi in due gruppi con ruoli contrapposti. Il <strong>red team</strong> aveva il compito di attaccare un sistema, il <strong>blue team</strong> di difenderlo.</p>
+      <div class="detail-section reveal">
+      <div class="img-text-wrap">
+        <img class="detail-img detail-img-float" src="../../Images/mead5.jpg" alt="Foto mead quinta"/>
+        <div>
+          <p>Dal lato offensivo, il primo passo è stato utilizzare <strong>nmap</strong> per scansionare la rete alla ricerca di porte aperte e servizi esposti. Una volta individuato l'obiettivo, è stata eseguita una <strong>SQL injection</strong> su una pagina di login vulnerabile, ottenendo così l'accesso al sistema. Da lì è stato avviato un processo PowerShell sul dispositivo compromesso per mantenere il controllo usando <strong>Meterpreter</strong>. Infine sono state rubate le credenziali di login della vittima per poter entrare nel sistema in futuro con facilità.</p>
+        </div>
+      </div>
+    </div>
+      <p>Dal lato difensivo, attraverso un software di monitoraggio dei log di rete è stato rilevato l'avvio anomalo del processo PowerShell. Tramite <strong>SentinelOne</strong> l'esecuzione è stata immediatamente bloccata, neutralizzando l'attacco prima che potesse causare danni.</p>
     </div>
     <div class="detail-section reveal"><h2>Commento</h2>
       <div class="commento-box">
-        <p></p>
+        <p>L'attività è stata abbastanza interessante, soprattutto perché rispetto all'incontro dell'anno precedente le mie conoscenze in materia erano cresciute notevolmente. Era un piacere riuscire a seguire ogni concetto con chiarezza e collegarlo a ciò che avevo già studiato. Il mondo della cybersecurity è vastissimo e quello che mi è stato mostrato ne rappresenta solo una piccola parte, ma è comunque riuscito a suscitarmi parecchio interesse.</p>
+        <p>La nota negativa riguarda la modalità con cui l'incontro è stato condotto. Mi aspettavo un laboratorio in cui ogni gruppo potesse provare in prima persona a eseguire e respingere gli attacchi. Invece eravamo in gruppi numerosi davanti a un unico monitor, con un tecnico Mead che eseguiva tutte le azioni al posto nostro. Era difficile sia seguire visivamente quello che stava facendo, sia mantenere l'attenzione in un formato così poco interattivo. La vicinanza tra i gruppi rendeva inoltre difficile isolarsi e concentrarsi, con le voci degli altri che si sovrapponevano continuamente.</p>
+        <p>Nel complesso, un argomento davvero stimolante che avrei voluto esplorare in modo più pratico. Avere almeno la possibilità di seguire le azioni dal proiettore, visibili a tutti contemporaneamente, avrebbe reso l'esperienza decisamente più significativa.</p>
       </div>
     </div>
     <div class="detail-section reveal"><h2>Competenze attivate</h2>
       <div class="comp-grid">
         <div class="comp-card"><h3>Trasversali</h3><ul>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>Competenza personale, sociale, e capacità di imparare ad imparare</li>
+          <li>Competenza imprenditoriale</li>
+          <li>Competenza matematica e in scienze, tecnologia e ingegneria</li>
+          <li>Competenza digitale</li>
+          <li>Competenza in materia di cittadinanza</li>
         </ul></div>
         <div class="comp-card"><h3>Specifiche</h3><ul>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>Comprensione delle fasi di un attacco informatico</li>
+          <li>Capacità di analisi delle vulnerabilità di un sistema</li>
+          <li>Utilizzo base di strumenti di rete</li>
+          <li>Conoscenza base delle tecniche di attacco</li>
+          <li>Capacità di rilevamento e risposta agli attacchi informatici</li>
+          <li>Comprensione dei ruoli Red Team / Blue Team</li>
+          <li>Consapevolezza delle pratiche di sicurezza e difesa dei sistemi</li>
         </ul></div>
       </div>
     </div>
